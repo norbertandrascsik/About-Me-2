@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
 *
 {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
 header
@@ -18,16 +21,12 @@ header
   transition: 0.6s;
 }
 
-header .logo
+.logo
 {
   position: relative;
-  font-weight: 700;
-  color:#fff;
-  text-decoration: none;
-  font-size: 2em;
-  text-transform: uppercase;
-  letter-spacing: 2px;
   transition: 0.6s;
+  filter: invert(1);
+  mix-blend-mode: difference;
 }
 
 .banner
@@ -102,8 +101,21 @@ header .logo
   height: 50px;
   text-decoration: none;
   border: 1px solid #fff;
-  
+  margin: 10px 0 0;
 }
+
+.sci li a:hover
+{
+  background: #fff;
+}
+
+.sci li a img
+{
+  max-width: 20px;
+  filter: invert(1);
+  mix-blend-mode: difference;
+}
+
 
 
 
